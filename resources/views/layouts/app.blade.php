@@ -28,6 +28,14 @@
         <div class="container">
             @yield('content')
         </div>
+        
+        <div class="collapse navbar-collapse" id="nav-bar">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                {{-- メッセージ作成ページへのリンク --}}
+                <li class="nav-item">{!! link_to_route('tasks.create', 'タスクの追加', [], ['class' => 'nav-link']) !!}</li>
+            </ul>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
