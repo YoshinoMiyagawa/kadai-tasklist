@@ -13,6 +13,11 @@
                     {!! Form::label('content', 'タスク:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
+                <div class="form-group">
+                    {!! Form::label('status', '進行状況:') !!}
+                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
+                </div>
+                
 
                 {!! Form::submit('やるぞ', ['class' => 'btn btn-primary']) !!}
 
